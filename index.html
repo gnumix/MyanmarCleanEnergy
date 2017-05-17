@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Myanmar - Clean Energy</title>
+    <link rel='stylesheet' href='css/stylesheet.css' />
+    <link rel='stylesheet' href='css/d3.slider.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata' />
+</head>
+<body>
+
+    <div id='main'>
+
+        <!-- Map -->
+        <div id='map'>
+            <svg></svg>
+        </div>
+
+        <!-- Menu -->
+        <div id='menu'>
+
+            <h1>Myanmar</h1>
+
+            <br>
+
+            <!-- Electrification -->
+            <h2>Electrification</h2>
+
+            <h3>
+                Population:
+                <span id='poptextmin'>2850</span> &mdash; <span id='poptextmax'>1487110</span>
+            </h3>
+            <div id='pop'></div>
+
+            <h3>
+                Electrification:
+                <span id='electextmin'>0.0</span>% &mdash; <span id='electextmax'>100.0</span>%
+            </h3>
+            <div id='elec'></div>
+
+            <br>
+
+            <!-- Demographics -->
+            <h2>Demographics</h2>
+
+            <h3>
+                Working Age (15 &mdash; 64):
+                <span id='worktextmin'>56.3</span>% &mdash; <span id='worktextmax'>89.1</span>%
+            </h3>
+            <div id='work'></div>
+
+            <h3>
+                Mid+-Level Education:
+                <span id='edutextmin'>0.0</span>% &mdash; <span id='edutextmax'>38.0</span>%
+            </h3>
+            <div id='edu'></div>
+
+            <h3>
+                Dependents Ratio:
+                <span id='deptextmin'>24.5</span>% &mdash; <span id='deptextmax'>94.0</span>%
+            </h3>
+            <div id='dep'></div>
+
+            <br>
+
+            <!-- Infrastructure -->
+            <h2>Infrastructure</h2>
+
+            <h3>
+                Cellphone Coverage: <span id='celltextmin'>0.0</span>% &mdash; <span id='celltextmax'>95.4</span>%
+            </h3>
+            <div id='cell'></div>
+
+            <h3>
+                Solar Energy Coverage: <span id='soltextmin'>0.0</span>% &mdash; <span id='soltextmax'>70.7</span>%
+            </h3>
+            <div id='sol'></div>
+
+            <div id='roads'>
+                <h3><input type="checkbox" id="roads_checkbox"> TOGGLE ROADS</h3>
+            </div>
+
+            <div id='lines'>
+                <h3><input type="checkbox" id="lines_checkbox"> TOGGLE GRID</h3>
+            </div>
+
+        </div>
+
+        <!-- Info box -->
+        <div id='info' class='info'>
+
+            <h3 class='name'></h3>
+
+            <div data-metric='info_pop' class='line'>
+                <div class='info_pop symbol'></div> Population
+                <div class='info_pop_val moe'></div>
+                <div class='info_pop_val val'></div>
+            </div>
+
+            <div data-metric='info_elec' class='line'>
+                <div class='info_elec symbol'></div> Electrification
+                <div class='info_elec_val moe'></div>
+                <div class='info_elec_val val'></div>
+            </div>
+
+            <div data-metric='info_work' class='line'>
+                <div class='info_work symbol'></div> Working Age
+                <div class='info_work_val moe'></div>
+                <div class='info_work_val val'></div>
+            </div>
+
+            <div data-metric='info_edu' class='line'>
+                <div class='info_edu symbol'></div> Mid+ Education
+                <div class='info_edu_val moe'></div>
+                <div class='info_edu_val val'></div>
+            </div>
+
+            <div data-metric='info_dep' class='line'>
+                <div class='info_dep symbol'></div> Dependents
+                <div class='info_dep_val moe'></div>
+                <div class='info_dep_val val'></div>
+            </div>
+
+            <div data-metric='info_cell' class='line'>
+                <div class='info_cell symbol'></div> Cellphones
+                <div class='info_cell_val moe'></div>
+                <div class='info_cell_val val'></div>
+            </div>
+
+            <div data-metric='info_sol' class='line'>
+                <div class='info_sol symbol'></div> Solar Energy
+                <div class='info_sol_val moe'></div>
+                <div class='info_sol_val val'></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src='http://d3js.org/d3.v3.min.js'></script>
+    <script src='js/d3.slider.js'></script>
+    <script src='js/myanmar.js'></script>
+
+</body>
+</html>

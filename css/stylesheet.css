@@ -1,0 +1,166 @@
+#main {
+    width: 1200px;
+    margin: 0;
+    font-family: 'Inconsolata', Monaco, 'Lucida Console', Consolas, 'Courier New';
+}
+
+#map {
+    float: left;
+    width: 800px;
+    height: 1200px;
+}
+
+#menu {
+    float: left;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.road-layer {
+    fill-opacity: 0;
+    stroke: #C21F1F;
+    stroke-opacity: 0.3;
+}
+
+.hv-layer {
+    fill-opacity: 0;
+    stroke: #35B635;
+    stroke-opacity: 0.9;
+}
+
+.mv-layer {
+    fill-opacity: 0;
+    stroke: #385598;
+    stroke-opacity: 0.6;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+path.highlight {
+	fill: #f1e12b;
+	color: #f1e12b;
+}
+
+path.hidelayer {
+	stroke-opacity: 0;
+}
+
+div.info {
+    position: absolute;
+    text-align: left;
+    width: 210px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: 'Inconsolata', Monaco, 'Lucida Console', Consolas, 'Courier New';
+    background: #fff;
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.info h3 {
+    font-size: 12px;
+    margin: 0 0 7px 0;
+    line-height: 1.2em;
+}
+
+div.info .line {
+    clear: both;
+    margin-top: 3px;
+    font-size: 11px;
+}
+
+div.info .symbol {
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 3px 4px 0 0;
+}
+
+div.info .val {
+    float: right;
+    width: 35px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+div.info .moe {
+    float: right;
+    color: #aaa;
+    width: 30px;
+    text-align: right;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.button {
+    fill: #000;
+}
+
+.counties {
+    fill: #e0e0e0;
+}
+
+.states {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+}
+
+path.selected {
+    stroke-width: 0.5px;
+    fill: #084f4e;
+    fill-opacity: 0.5;
+}
+
+path.info_pop, .info .info_pop {
+    fill: #8dd3c7;
+    background: #8dd3c7;
+}
+path.info_elec, .info .info_elec {
+    fill: #bc80bd;
+    background: #bc80bd;
+}
+path.info_work, .info .info_work {
+    fill: #bebada;
+    background: #bebada;
+}
+path.info_edu, .info .info_edu {
+    fill: #fb8072;
+    background: #fb8072;
+}
+path.info_dep, .info .info_dep {
+    fill: #80b1d3;
+    background: #80b1d3;
+}
+path.info_cell, .info .info_cell {
+    fill: #fdb462;
+    background: #fdb462;
+}
+path.info_sol, .info .info_sol {
+    fill: #b3de69;
+    background: #b3de69;
+}
+
+path.NODATA {
+    fill: #fff;
+}
